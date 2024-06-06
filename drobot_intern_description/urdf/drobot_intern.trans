@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<robot name="drobot_intern" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="base_right_wheel_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="base_right_wheel">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="base_right_wheel_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="base_left_wheel_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="base_left_wheel">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="base_left_wheel_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="base_left_cluster_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="base_left_cluster">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="base_left_cluster_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="base_right_cluster_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="base_right_cluster">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="base_right_cluster_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="lidar_lens_to_base_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="lidar_lens_to_base">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="lidar_lens_to_base_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="right_jaw_to_lifter_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="right_jaw_to_lifter">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="right_jaw_to_lifter_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="left_jaw_to_lifter_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="left_jaw_to_lifter">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="left_jaw_to_lifter_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="lifter_to_arm_base_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="lifter_to_arm_base">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="lifter_to_arm_base_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>
