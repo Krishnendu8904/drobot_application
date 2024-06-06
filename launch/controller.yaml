@@ -1,0 +1,39 @@
+drobot_intern_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  base_right_wheel_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: base_right_wheel
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  base_left_wheel_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: base_left_wheel
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  base_left_cluster_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: base_left_cluster
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  base_right_cluster_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: base_right_cluster
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  lidar_lens_to_base_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: lidar_lens_to_base
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  right_jaw_to_lifter_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: right_jaw_to_lifter
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  left_jaw_to_lifter_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: left_jaw_to_lifter
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  lifter_to_arm_base_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: lifter_to_arm_base
+    pid: {p: 100.0, i: 0.01, d: 10.0}
